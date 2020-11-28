@@ -1,0 +1,13 @@
+
+
+/* Colors:
+    primary color : #94b4a4
+    secondary color : #d2f5e3
+    tertiary color : #e5c5b5
+    fourth color : #f4d9c6
+*/
+
+#title {
+    background-image: linear-gradient(100deg , #d2f5e3 0% ,
+    #d2f5e3 50% , #94b4a4 50%);
+}
