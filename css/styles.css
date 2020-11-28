@@ -7,7 +7,145 @@
     fourth color : #f4d9c6
 */
 
-#title {
-    background-image: linear-gradient(100deg , #d2f5e3 0% ,
-    #d2f5e3 50% , #94b4a4 50%);
+body {
+    font-family: 'Montserrat', sans-serif;
 }
+
+#title {
+    background-image: linear-gradient(100deg ,
+    #94b4a4 0% ,
+    #94b4a4 50% ,
+    #d2f5e3 50%);
+    color: #f4d9c6;
+
+
+}
+.row {
+    transition: all .3s;
+    /* margin-top: 100px; */
+
+}
+.container-fluid {
+    padding:3% 10%;
+}
+.title__primary-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    
+}
+.title__left {
+    animation-name: MoveInRight;
+    animation-duration: 1s;
+}
+.title__right {
+    animation-name: MoveInLeft;
+    animation-duration: 1s;
+    /* transform: rotate(80deg);
+    margin-top: 100px; */
+}
+
+.title__image {
+    width: 60%;
+    transform: rotate(25deg);
+}
+
+
+
+/* Components Buttons */
+.btn {
+    transition: all .1s;
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+.btn:active{
+    outline: hidden;
+    transform: translateY(-1px);
+}
+.btn-download {
+    margin: 5% 3% 5% 0;
+}
+
+/* Navigation style */
+.navbar {
+    padding:0 0 4.5rem;
+    
+}
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: 700;
+   
+}
+
+.nav-item:not(:last-child) {
+    padding-right: 18px;
+    
+}
+.nav-link,
+.nav-link:link,
+.nav-link:active {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: rgba(148,180,164, .6);
+    box-shadow: 0rem .3rem .5rem rgba(0,0,0,.2);
+    border-radius: 10px;
+    color: rgb(244, 217, 198);
+}
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 62.5em) {
+    #title {
+        background-image: linear-gradient(to right , #d2f5e3 0%,#94b4a4 60%);
+    }
+    .nav-link,
+    .nav-link:link,
+    .nav-link:active {
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        
+    }
+  }
+
+
+
+  /* Animations */
+  @keyframes MoveInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes MoveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(200px) ;
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(-2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) ;
+    }
+  }
