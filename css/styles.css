@@ -105,9 +105,11 @@ body {
 #testimonials {
     /* background-image: linear-gradient(to right , #d2f5e3 0%,#94b4a4 60%); */
     /* padding: 50px; */
-    
+    background-color:#e5c5b5 ;
     text-align: center;
-    color: #e5c5b5;
+    padding-top: 10%;
+    margin-top: -50px;
+    color: white;
 }
 .carousel-item {
     padding: 7% 15%;
@@ -134,6 +136,8 @@ body {
 #press {
     text-align: center;
     padding-bottom: 3%;
+    background-color:#e5c5b5 ;
+    color: white;
 }
 
 .press__image {
