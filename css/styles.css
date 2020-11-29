@@ -141,7 +141,19 @@ body {
 
 #pricing{
     background-color: white;
+    text-align: center;
+    padding: 8% 15%;
+    
 }
+.card {
+    margin: 20px 0;
+}
+.price__header {
+    background-color: #94b4a4;
+    color:white ;
+    
+}
+
 /* Components Buttons */
 .btn {
     transition: all .1s;
@@ -155,6 +167,10 @@ body {
 }
 .btn-download {
     margin: 5% 3% 5% 0;
+}
+
+.btn-price {
+    display: inline-block;
 }
 
 /* Navigation style */
