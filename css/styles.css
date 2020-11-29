@@ -9,7 +9,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to right , #d2f5e3 0%,#94b4a4 60%);
+    background-color: #94b4a4;
+    padding: 1%;
 }
 
 #title {
@@ -97,10 +98,50 @@ body {
 
 /* testimonials */
 #testimonials {
-    background-image: linear-gradient(to right , #d2f5e3 0%,#94b4a4 60%);
+    /* background-image: linear-gradient(to right , #d2f5e3 0%,#94b4a4 60%); */
     /* padding: 50px; */
+   
+    text-align: center;
+    color: #e5c5b5;
+}
+.carousel-item {
+    padding: 7% 15%;
 }
 
+.testimonials__heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    /* display: inline-block; */
+}
+
+.testimonials__image {
+    margin: 20px;
+    border-radius: 50%;
+    width: 15%;
+}
+.testimonials__carousel-icon {
+    color: #f4d9c6;
+}
+
+
+#press {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press__image {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+
+
+#pricing{
+    background-color: white;
+}
 /* Components Buttons */
 .btn {
     transition: all .1s;
@@ -163,6 +204,14 @@ body {
         box-shadow: none;
         
     }
+
+    .testimonials__heading {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 1;
+        /* display: inline-block; */
+    }
   }
 
 
@@ -197,3 +246,6 @@ body {
         transform: translateX(0) ;
     }
   }
+
+
+  
